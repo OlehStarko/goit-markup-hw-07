@@ -3,7 +3,8 @@
   --body-text-color: #212121;
   --logo-color: #2196f3;
   --active-color: #2196f3;
-  --logo-span-color: #212121;
+  --logo-dark-color: #212121;
+  --logo-white-color: #ffffff;
   --header-link-color: #212121;
   --header-link-active-color: #2196f3;
   --header-contact-link-active-color: #2196f3;
@@ -40,7 +41,6 @@
   --clients-list-item-button-active-border-color: #188ce8;
   --footer-bg-color: #2f303a;
   --footer-contact-color: #ffffff;
-  --footer-logo-span-color: #ffffff;
   --footer-contact-link-color: rgba(255, 255, 255, 0.6);
   --footer-contact-link-active-color: #2196f3;
   --footer-social-text-color: #ffffff;
@@ -136,11 +136,11 @@ img {
 }
 
 .logo--dark {
-  color: var(--logo-span-color);
+  color: var(--logo-dark-color);
 }
 
 .logo--white {
-  color: var(--footer-logo-span-color);
+  color: var(--logo-white-color);
 }
 
 .header__nav {
@@ -186,12 +186,9 @@ img {
   color: var(--header-link-color);
   transition: color 250ms var(--timing-function);
 }
-.header__link.current {
-  color: var(--header-link-current-color);
-}
 
 .header__link--current {
-  color: #188ce8;
+  color: var(--header-link-current-color);
 }
 
 .header__link--current::after {
