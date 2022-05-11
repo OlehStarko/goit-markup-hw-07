@@ -7,7 +7,7 @@
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--hero-main-text-color);
+  color: $hero-main-text-color;
 }
 
 .hero__container {
@@ -15,7 +15,7 @@
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background: var(--hero-bg-color);
+  background: $hero-bg-color;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -30,8 +30,8 @@
   background-size: cover;
 }
 .button {
-  color: var(--hero-btn-text-color);
-  background: var(--hero-btn-bg-color);
+  color: $hero-btn-text-color;
+  background: $hero-btn-bg-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
@@ -47,15 +47,12 @@
   margin-left: auto;
   margin-right: auto;
   transform: scale(1);
-  transition: background-color 250ms var(--timing-function),
-    transform 250ms var(--timing-function);
+  transition: background-color 250ms $timing-function,
+    transform 250ms $timing-function;
 
-  &:hover {
-    background: var(--hero-btn-active-color);
+  &:hover,
+  &:focus {
+    background: $hero-btn-active-color;
     transform: scale(1.1);
   }
-}
-
-.button:hover,
-.button:focus {
 }

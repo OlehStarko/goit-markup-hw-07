@@ -17,7 +17,7 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--footer-social-text-color);
+  color: $footer-social-text-color;
 }
 .social-box__button {
   display: flex;
@@ -27,38 +27,36 @@
   height: 44px;
   padding: 0;
   border: none;
-  color: var(--team-social-button-color);
+  color: $team-social-button-color;
   border-radius: 50%;
-  background-color: var(--team-social-button-bg-color);
+  background-color: $team-social-button-bg-color;
 
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color 250ms $timing-function;
+
+  &:hover {
+    background-color: #188ce8;
+    cursor: pointer;
+  }
+  &:hover .social-box__icon {
+    fill: $team-social-button-active-color;
+  }
 }
 
 .social-box__button--dark {
-  color: var(--footer-social-text-button-color);
+  color: $footer-social-text-button-color;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
 .social-box__item {
   margin-right: 10px;
-}
-
-.social-box__item:last-child {
-  margin-right: 0;
-}
-
-.social-box__button:hover {
-  background-color: #188ce8;
-  cursor: pointer;
-}
-
-.social-box__button:hover .social-box__icon {
-  fill: var(--team-social-button-active-color);
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social-box__icon {
   fill: currentColor;
 
-  transition: fill 250ms var(--timing-function);
+  transition: fill 250ms $timing-function;
 }

@@ -7,13 +7,13 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: var(--logo-color);
+  color: $logo-color;
 }
 
 .logo--dark {
-  color: var(--logo-dark-color);
+  color: $logo-dark-color;
 }
 
 .logo--white {
-  color: var(--logo-white-color);
+  color: $logo-white-color;
 }

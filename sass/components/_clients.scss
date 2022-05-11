@@ -21,32 +21,32 @@
   height: 92px;
   padding: 0;
   border: none;
-  color: var(--clients-list-item-button-color);
-  border: 1px solid var(--clients-list-item-button-border-color);
+  color: $clients-button-color;
+  border: 1px solid $clients-button-border-color;
   border-radius: 4px;
-  background-color: var(--clients-list-item-button-bg-color);
+  background-color: $clients-button-bg-color;
 
-  transition: border 250ms var(--timing-function);
-}
+  transition: border 250ms $timing-function;
 
-.clients__button:hover {
-  border: 1px solid var(--clients-list-item-button-active-border-color);
-  cursor: pointer;
-}
-
-.clients__button:hover .clients__icon {
-  fill: #188ce8;
+  &:hover {
+    border: 1px solid $clients-button-active-border-color;
+    cursor: pointer;
+  }
+  &:hover .clients__icon {
+    fill: #188ce8;
+  }
 }
 
 .clients__icon {
   fill: currentColor;
 
-  transition: fill 250ms var(--timing-function);
+  transition: fill 250ms $timing-function;
 }
 
 .clients__item {
   margin-right: 30px;
-}
-.clients__item:last-child {
-  margin-right: 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }

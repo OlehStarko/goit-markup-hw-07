@@ -8,7 +8,7 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  color: var(--occupation-main-text-color);
+  color: $occupation-main-text-color;
 }
 
 .occupation__list {
@@ -17,10 +17,10 @@
 
 .occupation__item {
   position: relative;
-}
 
-.occupation__item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .occupation__description {

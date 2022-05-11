@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--footer-bg-color);
+  background-color: $footer-bg-color;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -19,7 +19,7 @@
   margin-bottom: 0;
   font-style: normal;
   line-height: 1.71;
-  color: var(--footer-contact-color);
+  color: $footer-contact-color;
 }
 
 .subscribe {
@@ -33,7 +33,7 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--footer-social-text-color);
+  color: $footer-social-text-color;
 }
 
 .subscribe__field {
@@ -47,28 +47,28 @@
   width: 358px;
   height: 50px;
   color: rgba(255, 255, 255, 0.6);
-  background-color: var(--footer-bg-color);
+  background-color: $footer-bg-color;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   outline: none;
-  transition: border-color 250ms var(--timing-function);
-}
+  transition: border-color 250ms $timing-function;
 
-.subscribe__input:hover,
-.subscribe__input:focus {
-  border: 1px solid #188ce8;
+  &:hover,
+  &:focus {
+    border: 1px solid #188ce8;
+  }
 }
 
 .footer__button {
   display: flex;
   align-items: center;
   margin-left: 12px;
-  transition: background-color 250ms var(--timing-function);
-}
+  transition: background-color 250ms $timing-function;
 
-.footer__button:hover,
-.footer__button:focus {
-  transform: scale(1);
+  &:hover,
+  &:focus {
+    transform: scale(1);
+  }
 }
 
 .subscribe__icon {
